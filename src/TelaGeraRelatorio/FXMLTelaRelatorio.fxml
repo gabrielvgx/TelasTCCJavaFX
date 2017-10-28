@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="painelPrincipal" prefHeight="655.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TelaGeraRelatorio.FXMLTelaRelatorioController">
+    <children>
+      <JFXButton fx:id="pesquisaAnimal" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutX="440.0" layoutY="59.0" prefHeight="36.0" prefWidth="130.0" ripplerFill="#a9fff5" style="-fx-background-color: #26a69a;" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+   
+      </JFXButton>
+      <JFXTreeTableView fx:id="tabelaAnimais" layoutX="71.0" layoutY="335.0" prefHeight="206.0" prefWidth="1034.0" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="151.0">
+         <columns>
+            <TreeTableColumn prefWidth="74.0" text="Nº Animal" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXTextField focusColor="#36a133" labelFloat="true" layoutX="151.0" layoutY="65.0" prefHeight="25.0" prefWidth="259.0" promptText="Nº Animal" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="65.0" />
+      <JFXToggleButton fx:id="geraRelatorioFazenda" layoutX="891.0" layoutY="48.0" onAction="#gerarRelatorioFazenda" text="Gerar Relatorio da Fazenda" toggleColor="#36a133" toggleLineColor="#5dc657" />
+      <Label layoutX="513.0" layoutY="125.0" text="Tipo de Relatorio" AnchorPane.leftAnchor="513.0" AnchorPane.rightAnchor="455.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="relatorioLeiteiro" checkedColor="#36a133" layoutX="360.0" layoutY="210.0" text="Leiteiro" />
+      <JFXCheckBox fx:id="relatorioAnimal" checkedColor="#36a133" layoutX="590.0" layoutY="210.0" text="Resumo Animal" />
+      <JFXCheckBox fx:id="relatorioDietas" checkedColor="#36a133" layoutX="820.0" layoutY="210.0" text="Dietas" />
+      <JFXCheckBox fx:id="relatorioMedicamentos" checkedColor="#36a133" layoutX="360.0" layoutY="250.0" text="Medicamentos" />
+      <JFXCheckBox fx:id="relatorioVendaLeite" checkedColor="#36a133" layoutX="590.0" layoutY="250.0" text="Venda de Leite" />
+      <JFXCheckBox fx:id="selecionaTodosRelatorios" checkedColor="#36a133" layoutX="820.0" layoutY="250.0" onAction="#selecionarTodosRelatorios" text="Todos" />
+      <JFXButton fx:id="geraPDF" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutX="959.0" layoutY="573.0" prefHeight="36.0" prefWidth="146.0" ripplerFill="#a9fff5" style="-fx-background-color: #26a69a;" text="Gerar PDF" textFill="WHITE" AnchorPane.bottomAnchor="46.0" AnchorPane.rightAnchor="151.0">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+     
+      </JFXButton>
+    </children>
+</AnchorPane>
