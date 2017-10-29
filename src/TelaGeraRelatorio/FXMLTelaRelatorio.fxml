@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
@@ -10,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="painelPrincipal" prefHeight="655.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TelaGeraRelatorio.FXMLTelaRelatorioController">
+<AnchorPane id="AnchorPane" fx:id="painelPrincipal" prefHeight="655.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TelaGeraRelatorio.FXMLTelaRelatorioController">
     <children>
       <JFXButton fx:id="pesquisaAnimal" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" ellipsisString="" layoutX="440.0" layoutY="59.0" prefHeight="36.0" prefWidth="130.0" ripplerFill="#a9fff5" style="-fx-background-color: #26a69a;" textFill="WHITE">
          <font>
@@ -42,5 +44,7 @@
          </font>
      
       </JFXButton>
+      <JFXHamburger fx:id="hamburger" layoutX="1190.0" layoutY="28.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" prefHeight="656.0" prefWidth="150.0" />
     </children>
 </AnchorPane>

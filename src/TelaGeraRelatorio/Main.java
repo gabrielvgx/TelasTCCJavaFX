@@ -11,7 +11,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -22,13 +21,12 @@ public class Main extends Application {
     public static Stage stagePrincipal;
     public static Scene telaCadastro;
     public static Scene telaRelatorio;
-    public static VBox box;
     @Override
     public void start(Stage stage) throws Exception {
         stagePrincipal = stage;
         Parent root = FXMLLoader.load(getClass().getResource("FXMLTelaRelatorio.fxml"));
         Parent root2 = FXMLLoader.load(FXMLTelaCadastroController.class.getResource("FXMLTelaCadastro.fxml"));
-        box = FXMLLoader.load(getClass().getResource("FXMLMenuLateral.fxml"));
+//        box = FXMLLoader.load(getClass().getResource("FXMLMenuLateral.fxml"));
         telaRelatorio = new Scene(root,1256,655);
         telaCadastro = new Scene(root2,1256,655);
         stage.setScene(telaRelatorio);
